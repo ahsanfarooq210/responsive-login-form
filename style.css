@@ -47,6 +47,10 @@ main {
   width: 45%;
   top: 0;
   left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+    transition: 0.8s ease-in-out;
 }
 
 .carousel {
@@ -57,6 +61,7 @@ main {
   top: 0;
   background-color: #ffe0d2;
   border-radius: 2rem;
+  transition: 0.8s ease-in-out;
 }
 
 form {
@@ -67,6 +72,14 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  transition: opacity 0.02s 0.4s;
+}
+
+form.sign-up-form{
+    opacity: 0;
+    pointer-events: none;
 }
 
 form.sign-in-form{
@@ -80,7 +93,7 @@ form.sign-in-form{
 
 .logo img {
   width: 27px;
-  margin: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 .logo h3 {
@@ -189,4 +202,26 @@ label{
 
 .text a:hover{
     color: #8371fd;
+}
+
+
+
+main.sign-up-mode form.sign-in-form
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+main.sign-up-mode form.sign-up-form
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+main.sign-up-mode .forms-wrap{
+    left: 55%;
+}
+
+main.sign-up-mode .carousel{
+    left: 0%;
 }
