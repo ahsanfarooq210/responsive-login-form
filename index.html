@@ -12,7 +12,7 @@
       <div class="box">
         <div class="inner-box">
           <div class="forms-wrap">
-            <form action="index.html" autocomplete="off" class="signin">
+            <form action="index.html" autocomplete="off" class="sign-in-form">
               <div class="logo">
                 <img src="./img/logo.png" alt="easy class" />
                 <h3>easyclass</h3>
@@ -54,6 +54,60 @@
                 </p>
               </div>
             </form>
+
+            <form action="index.html" autocomplete="off" class="sign-up-form">
+                <div class="logo">
+                  <img src="./img/logo.png" alt="easy class" />
+                  <h3>easyclass</h3>
+                </div>
+  
+                <div class="heading">
+                  <h2>Get Started</h2>
+                  <h6>Already have an account?</h6>
+                  <a href="#" class="toggle">Sign in</a>
+                </div>
+  
+                <div class="actual-form">
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      id="name"
+                      minlength="4"
+                      class="input-field"
+                      autocomplete="email"
+                      required />
+                    <label for="name">Name</label>
+                  </div>
+
+                  <div class="input-wrap">
+                    <input
+                    type="email"
+                    id="email"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="email"
+                    required />
+                  <label for="email">Email</label>
+                  </div>
+  
+                  <div class="input-wrap">
+                    <input
+                      type="password"
+                      id="password"
+                      minlength="4"
+                      class="input-field"
+                      autocomplete="off"
+                      required />
+                    <label for="password">Password</label>
+                  </div>
+  
+                  <input type="submit" value="Sign Up" class="sign-btn" />
+                  <p class="text">
+                    By signing up, I agree to the <a href="#" >Terms of Services</a> and <a href="#" >Privacy Policy</a>
+                  </p>
+                </div>
+              </form>
+
           </div>
           <div class="carousel"></div>
         </div>
